@@ -1,2 +1,0 @@
-imagenes, iconos, fuentes
-
