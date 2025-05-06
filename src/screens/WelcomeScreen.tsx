@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, Alert } from "react-native"
 import { useNavigation, useRoute } from "@react-navigation/native"
-import { supabase } from "../lib/supabase"
+import { supabase } from "../utils/supabase"
 import {Background} from "../components/Background"
 import {Card} from "../components/Card"
 import {Button} from "../components/Button"

@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, TouchableOpacity, ImageBackground } from "react-native"
 //base de datos
-import { supabase } from "../lib/supabase"
+import { supabase } from "../utils/supabase"
 //#####
 interface WelcomeScreenProps {
   route: {

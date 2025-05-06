@@ -14,7 +14,7 @@ import {
   Alert,
 } from "react-native"
 import { Picker } from "@react-native-picker/picker"
-import { supabase } from "../lib/supabase"
+import { supabase } from "../utils/supabase"
 
 interface RegisterScreenProps {
   navigation: any

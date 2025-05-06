@@ -12,7 +12,7 @@ import {
   ScrollView,
 } from "react-native"
 import { useNavigation } from "@react-navigation/native"
-import { supabase } from "../lib/supabase"
+import { supabase } from "../utils/supabase"
 import {Background} from "../components/Background"
 import {Card} from "../components/Card"
 import {Input} from "../components/Input"

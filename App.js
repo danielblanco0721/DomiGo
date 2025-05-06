@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import { StatusBar } from "expo-status-bar"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import type { Session } from "@supabase/supabase-js"
-import { supabase } from "./lib/supabase"
+import { Session } from "./src/utils/supabase"
+import { supabase } from "./src/utils/supabase"
 
 // Importar pantallas
 import LoginScreen from "./screens/LoginScreen"

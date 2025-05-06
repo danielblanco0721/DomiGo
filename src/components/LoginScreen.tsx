@@ -12,7 +12,7 @@ import {
   Platform,
   Alert,
 } from "react-native"
-import { supabase } from "../lib/supabase"
+import { supabase } from "../utils/supabase"
 
 interface LoginScreenProps {
   navigation: any
