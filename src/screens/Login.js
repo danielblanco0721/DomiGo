@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Alert,
+  Image,
 } from 'react-native';
 
 export default function Login({ navigation }) {
@@ -14,8 +15,8 @@ export default function Login({ navigation }) {
 
   const handleLogin = () => {
     // Static credentials
-    const validEmail = 'admin@domigo.com';
-    const validPassword = 'admin123';
+    const validEmail = '1';
+    const validPassword = '1';
 
     if (email === validEmail && password === validPassword) {
       navigation.replace('Home'); // Using replace to prevent going back to login
@@ -26,8 +27,12 @@ export default function Login({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>DomiGo</Text>
-      
+      <Image
+        source={require('../assets/logo.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      />
+            
       <TextInput
         style={styles.input}
         placeholder="Email"
@@ -97,5 +102,10 @@ const styles = StyleSheet.create({
     color: '#000',
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  logo: {
+    width: 150,
+    height: 150,
+    marginBottom: 20,
   },
 });
